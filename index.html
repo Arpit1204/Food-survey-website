@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Ingredients</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href = "style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body> 
+  
+  
+  
+    <div class = "meal-container">
+      <!-- div for logo-->
+      <div id="logo-div">
+        <img id="logo" src="./bd87839c22ba2ecc577a5c381f168dd4-removebg-preview.png" alt="">
+        <h1>Let's Cook</h1>
+      </div>
+      
+      
+      <!-- outer div which contains search box, some info of website, submit button  -->
+      <div class = "search">
+        <p id="web-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est hic optio perferendis quibusdam voluptate debitis, temporibus, nostrum incidunt facere iusto quas neque. Quis fugit accusamus maiores explicabo ut saepe id sint assumenda libero possimus impedit reprehenderit ullam alias molestiae voluptatem delectus, vero consequatur perferendis quasi quas, facere esse. Sed, omnis?</p>
+        <h2 class = "title">Your Search ends Here:</h2>
+        
+
+        <div class = "search-box">
+          <!-- search input -->
+          <input type = "text" class = "search-control" placeholder="Enter a Category" id = "search-input" list="data-list">
+          <!--datalist for options-->
+          <datalist id="data-list">
+            <option value="Chicken"></option>
+            <option value="Vegetarian"></option>
+            <option value="Lamb"></option>
+            <option value="Beef"></option>
+            <option value="Vegan"></option>
+            <option value="Starter"></option>
+            <option value="Seafood"></option>
+            <option value="Dessert"></option>
+            <option value="Goat"></option>
+            <option value="Side"></option>
+            <option value="Pork"></option>
+            <option value="Breakfast"></option>
+            <option value="Pasta"></option>
+          </datalist>
+          <!--submit button-->
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+           🔍
+          </button>
+        </div>
+        <!-- div for random meal-->
+        <div id="random-dish"></div>
+      </div>
+      <!-- div for displaying meals if category is valid-->
+      <div class = "meal-display">
+        <h2 class = "title">Your Search Results:</h2>
+        <div id= "meal">
+        
+          
+        </div>
+      </div>
+
+      <!-- modal div -->
+
+      <div class = "meal-details">
+        <!-- closing button-->
+        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+          ❌
+        </button>
+        
+        <h1 id="name"></h1>
+        <h2>Ingredients</h2>
+        <!--div to print ingredients-->
+        <div class = "meal-details-content">
+          
+
+
+        </div>
+        
+      </div>
+    </div>
+  
+
+
+
+  <script src = "app.js"></script>
+</body>
+</html>
